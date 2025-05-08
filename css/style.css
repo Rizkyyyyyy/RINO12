@@ -872,31 +872,17 @@ footer {
 }
 
 /* Media query untuk tampilan mobile */
+/* Untuk mobile dropdown */
 @media (max-width: 768px) {
     .dropdown-menu {
-        position: static;
-        background-color: #f8f8f8;
-        box-shadow: none;
-        opacity: 1;
         visibility: hidden;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease;
-        transform: none;
     }
-    
+
     .dropdown.active .dropdown-menu {
-        max-height: 500px;
         visibility: visible;
-    }
-    
-    .dropdown-menu a {
-        padding-left: 2rem;
-    }
-    
-    /* Mobile toggle functionality - perlu JavaScript */
-    .dropdown-toggle {
-        justify-content: space-between;
-        width: 100%;
+        max-height: 500px;
     }
 }
